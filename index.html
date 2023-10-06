@@ -34,7 +34,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <link href="css/comm.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js"></script>
         <script defer src="./js/scripts.js"></script>
     </head>
     <body id="page-top">
@@ -350,13 +352,71 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </section>
         <!-- Call to action section-->
-        <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide sld1">Slide 01</li>
-                    <li class="splide__slide sld2">Slide 02</li>
-                    <li class="splide__slide sld3">Slide 03</li>
-                </ul>
+        <section class="section-items bg-dark text-white">
+            <div class="scroll-slider">
+                <div class="scroll-wrapper">
+                    <article class="item scroll-slide">
+                        <div class="scroll-line"></div>
+                        <div class="item-container">
+                            <div class="item-image">
+                                <img <img src="./assets/img/sld1.png" alt="Image" />
+                                />
+                            </div>
+                            <div class="item-body">
+                                <h2 class="item-title">Grand Hotel</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error mollitia
+                                    provident.
+                                </p>
+                                <ul class="nav tags">
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Hotel</a></li>
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Colorful</a></li>
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Symetric</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item scroll-slide">
+                        <div class="item-container">
+                            <div class="item-image">
+                                <img src="./assets/img/sld2.png" alt="Image" />
+                            </div>
+                            <div class="item-body">
+                                <h2 class="item-title">Wall Street</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error mollitia
+                                    provident.
+                                </p>
+                                <ul class="nav tags">
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Trader</a></li>
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Drugs</a></li>
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Finance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="item scroll-slide">
+                        <div class="scroll-line"></div>
+                        <div class="item-container">
+                            <div class="item-image">
+                                <img <img src="./assets/img/sld3.png" alt="Image" />
+                                />
+                            </div>
+                            <div class="item-body">
+                                <h2 class="item-title">Grand Hotel</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error mollitia
+                                    provident.
+                                </p>
+                                <ul class="nav tags">
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Hotel</a></li>
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Colorful</a></li>
+                                    <li class="nav-item tag"><a href="#" class="nav-link">Symetric</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
         <!-- App badge section-->
