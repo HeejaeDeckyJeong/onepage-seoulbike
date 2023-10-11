@@ -63,16 +63,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     </ul>
-                    <button
-                        class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#feedbackModal"
-                    >
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Send Feedback</span>
-                        </span>
-                    </button>
                 </div>
             </div>
         </nav>
@@ -83,11 +73,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
-                            <p class="lead fw-normal text-muted mb-5">
-                                Launch your mobile app landing page faster with this free, open source theme from Start
-                                Bootstrap!
-                            </p>
+                            <p class="display-5 lh-1 mb-3">가장 가까운</p>
+                            <p class="display-5 lh-1 mb-3">친환경 교통수단</p>
+                            <h1 class="display-1 lh-1 mb-3">따릉이</h1>
+                            <p class="lead fw-normal text-muted mb-5">어플을 통해 더 쉽고 빠르게 이용하세요!</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                                 <a class="me-lg-3 mb-4 mb-lg-0" href="#!"
                                     ><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..."
@@ -177,6 +166,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </header>
+
+        <div class="scene">
+            <div class="bike-container bike-animation1">
+                <div class="bike-frame"><span></span></div>
+
+                <div class="bike-wheel" id="wheel-1"><span></span></div>
+                <div class="bike-wheel" id="wheel-2"><span></span></div>
+            </div>
+
+            <div class="bike-container bike-animation2">
+                <div class="bike-frame"><span></span></div>
+
+                <div class="bike-wheel" id="wheel-1"><span></span></div>
+                <div class="bike-wheel" id="wheel-2"><span></span></div>
+            </div>
+        </div>
         <!-- Quote/testimonial aside-->
         <aside class="text-center bg-gradient-primary-to-secondary">
             <div class="container px-5">
@@ -224,9 +229,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <img src="./assets/img/eco_icon.svg" alt="" />
-                                        <h3 class="font-alt">Device Mockups</h3>
+                                        <h3 class="font-alt">친환경 교통수단</h3>
                                         <p class="text-muted mb-0">
-                                            Ready to use HTML/CSS device mockups, no Photoshop required!
+                                            따릉이는 저탄소 녹색성장 실현을 위한 시민과 가장 가까운 교통 수단입니다.
+                                            <br />
+                                            따릉이 이용으로 맑은 서울을 만들어 주세요.
                                         </p>
                                     </div>
                                 </div>
@@ -234,9 +241,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <img src="./assets/img/easy_icon.svg" alt="" />
-                                        <h3 class="font-alt">Flexible Use</h3>
+                                        <h3 class="font-alt">쉽고 빠른 대여</h3>
                                         <p class="text-muted mb-0">
-                                            Put an image, video, animation, or anything else in the screen!
+                                            편리한 잠금장치와 QR코드로 쉽고 빠르게 대여할 수 있어요.
                                         </p>
                                     </div>
                                 </div>
@@ -246,19 +253,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <img src="./assets/img/anywhere_icon.svg" alt="" />
-                                        <h3 class="font-alt">Free to Use</h3>
-                                        <p class="text-muted mb-0">
-                                            As always, this theme is free to download and use for any purpose!
-                                        </p>
+                                        <h3 class="font-alt">서울시 어디에나</h3>
+                                        <p class="text-muted mb-0">서울시 구석구석 누구나 이용할 수 있어요.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <img src="./assets/img/chatbot_icon.svg" alt="" />
-                                        <h3 class="font-alt">Open Source</h3>
+                                        <h3 class="font-alt">언제든지 문의 가능</h3>
                                         <p class="text-muted mb-0">
-                                            Since this theme is MIT licensed, you can use it commercially!
+                                            무엇이든지 언제든지 물어보세요. 친절하고 똑똑한 AI 챗봇이 기다리고 있어요.
                                         </p>
                                     </div>
                                 </div>
@@ -352,14 +357,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </section>
         <!-- Call to action section-->
-        <section class="section-items bg-dark text-white">
+        <section class="section-items text-black">
             <div class="scroll-slider">
                 <div class="scroll-wrapper">
                     <article class="item scroll-slide">
                         <div class="scroll-line"></div>
                         <div class="item-container">
                             <div class="item-image">
-                                <img <img src="./assets/img/sld1.png" alt="Image" />
+                                <img src="./assets/img/sld1.png" height="50%" alt="Image" />
                                 />
                             </div>
                             <div class="item-body">
@@ -379,7 +384,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <article class="item scroll-slide">
                         <div class="item-container">
                             <div class="item-image">
-                                <img src="./assets/img/sld2.png" alt="Image" />
+                                <img src="./assets/img/sld2.png" height="50%" alt="Image" />
                             </div>
                             <div class="item-body">
                                 <h2 class="item-title">Wall Street</h2>
@@ -399,7 +404,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="scroll-line"></div>
                         <div class="item-container">
                             <div class="item-image">
-                                <img <img src="./assets/img/sld3.png" alt="Image" />
+                                <img <img src="./assets/img/sld3.png" height="50%" alt="Image" />
                                 />
                             </div>
                             <div class="item-body">

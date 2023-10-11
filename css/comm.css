@@ -70,10 +70,14 @@
   height: 100%;
 }
 
+.section-items {
+  background: #eaecee;
+}
+
 .item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
   height: 100%;
 }
 .item-container {
@@ -93,6 +97,9 @@
     transform: translate(-25%, -50%);
   }
 }
+.item img {
+  height: 80vh;
+}
 
 .tag {
   margin-right: 0.5rem;
@@ -104,4 +111,146 @@
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.25);
   color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.scene {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.scene * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.scene *:before,
+.scene *:after {
+  content: "";
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.scene .bike-container {
+  position: absolute;
+  width: 96px;
+  height: 70px;
+  bottom: 20px;
+  left: -96px;
+  z-index: 200;
+}
+.scene .bike-animation1 {
+  animation: bike 6s linear;
+  animation-iteration-count: infinite;
+  top: 200px;
+}
+.scene .bike-animation2 {
+  animation: bike 9s linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  transform: scaleX(-1);
+}
+@keyframes bike {
+  0% {
+    left: -96px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.scene .bike-frame {
+  position: relative;
+}
+.scene .bike-frame:before,
+.scene .bike-frame:after {
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  margin-left: 24px;
+  margin-top: 28px;
+  border: 3px solid green;
+}
+.scene .bike-frame:before {
+  transform: skew(-30deg);
+}
+.scene .bike-frame:after {
+  top: -6px;
+  left: 11px;
+  width: 34px;
+  height: 30px;
+  transform: skew(32deg);
+  border-top: none;
+  border-bottom: none;
+}
+.scene .bike-frame span {
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: #50698b;
+  border-radius: 3px;
+  top: 22px;
+  left: 24px;
+}
+.scene .bike-frame span:before {
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: #324172;
+  border-radius: 3px;
+  left: 26px;
+  top: -3px;
+}
+.scene .bike-wheel {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 3px solid #5a6666;
+  position: absolute;
+  transform-origin: center center;
+  animation: rotation 2s infinite linear;
+  bottom: 0;
+}
+.scene #wheel-1 {
+  left: 0;
+}
+.scene #wheel-2 {
+  right: 0;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.scene .bike-wheel:before,
+.scene .bike-wheel:after,
+.scene .bike-wheel span,
+.scene .bike-wheel span:before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #758585;
+  top: 15px;
+}
+.scene .bike-wheel:after {
+  transform: rotate(90deg);
+}
+.scene .bike-wheel span {
+  transform: rotate(45deg);
+}
+.scene .bike-wheel span:before {
+  transform: rotate(90deg);
+  top: 0px;
 }/*# sourceMappingURL=comm.css.map */
