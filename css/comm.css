@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap");
 @font-face {
   font-family: "KIMM_Bold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2") format("woff2");
@@ -5,8 +6,7 @@
   font-style: normal;
 }
 * {
-  font-family: "KIMM_Bold" !important;
-  font-weight: 0;
+  font-family: "Dongle", sans-serif;
 }
 
 .swiper {
@@ -121,7 +121,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.25);
-  color: #4a4444;
+  color: #fff;
 }
 
 body {
@@ -265,4 +265,8 @@ body {
 .scene .bike-wheel span:before {
   transform: rotate(90deg);
   top: 0px;
+}
+
+#intro * {
+  font-family: "KIMM_Bold" !important;
 }/*# sourceMappingURL=comm.css.map */
